@@ -49,13 +49,13 @@
 		<!-- [FIM] spring framework -->
 
 		<!-- JUST FOR TEST: REMOVE to deploy -->
-		<!--  --> 		 
+		<!--   		 
 		<dependency>
 			<groupId>javax.transaction</groupId>
 			<artifactId>jta</artifactId>
 			<version>1.1</version>
 		</dependency>
-		
+		-->
 		<!-- [FIM] JUST FOR TEST -->
 
 		<dependency>
@@ -132,7 +132,7 @@
 				<artifactId>jboss-maven-plugin</artifactId>
 				<version>1.5.0</version>
 				<configuration>
-					<jbossHome>C:\Users\felip_000\Documents\app\jboss-6.1.0.Final</jbossHome>
+					<jbossHome>/home/felipe/app/jboss-6.1.0.Final</jbossHome>
 					<serverName>default</serverName>
 					<finalName>ScrumBan</finalName>
 				</configuration>

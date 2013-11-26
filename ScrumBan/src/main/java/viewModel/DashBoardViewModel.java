@@ -9,7 +9,6 @@ public class DashBoardViewModel extends BaseViewModel{
 	
 	public DashBoardViewModel(UserModel loggedUser) {
 		super(loggedUser);
-		// TODO Auto-generated constructor stub
 	}
 
 	private List<ProjectModel> projects;
