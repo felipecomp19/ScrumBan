@@ -37,7 +37,7 @@ public class UserController {
 		else
 			this.uService.edit(user);
 		
-		return "redirect:users.html";
+		return "redirect:dashboard.html";
 	}
 	
 	@RequestMapping(value = "/editUser", method = RequestMethod.GET)
@@ -65,13 +65,13 @@ public class UserController {
 	}
 
 	private UserModel getVO(HttpServletRequest request) {
-		Integer id = new Integer(request.getParameter("id"));
-		String name = request.getParameter("name");
-		String email = request.getParameter("email");
-		String pwd = request.getParameter("pwd");
+		//Integer id = new Integer(request.getParameter("id"));
+		String name = request.getParameter("inputName");
+		String email = request.getParameter("inputEmail1");
+		String pwd = request.getParameter("inputPassword");
 		
 		UserModel user = new UserModel(name,email,pwd);
-		user.setId(id);
+		//user.setId(id);
 		return user;
 	}
 

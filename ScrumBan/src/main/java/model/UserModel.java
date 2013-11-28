@@ -14,13 +14,13 @@ public class UserModel extends BaseModel{
 	@SuppressWarnings("unused")
 	private static final long serialVersionUID = 1L;
 
-	@Column(name = "txt_name")
+	@Column(name = "txt_name", nullable = false)
 	private String name;
 
-	@Column(name = "txt_email")
+	@Column(name = "txt_email", nullable = false)
 	private String email;
 
-	@Column(name = "txt_password")
+	@Column(name = "txt_password", nullable = false)
 	private String password;
 	
 	@ManyToMany(mappedBy = "members")
