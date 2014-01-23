@@ -18,6 +18,7 @@ public class BaseController {
 	protected UserModel getLoggedUser() {
 		this.loggedUser = this.uService.getById(new Integer(1));
 		
+		this.loggedUser = new UserModel("Felipe Teixeira", "felipe@gmail.com", "123456");
 		System.out.println("ALERT!!! YOU NEED TO GET THE LOGGED USER");
 		
 		return this.loggedUser;

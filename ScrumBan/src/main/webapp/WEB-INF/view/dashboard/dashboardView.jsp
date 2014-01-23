@@ -9,7 +9,7 @@
 
 <jsp:useBean id="dashVM" type="viewModel.DashBoardViewModel" scope="request" />
 
-<t:sbpage>
+<t:sbpage baseVM="${dashVM}" activeLabel="dashboard">
    	<jsp:body>
 		<div class="container-fluid">
 			<div class="row-fluid">
@@ -86,9 +86,6 @@
 		</div>
 		
 		<%@include file="projectForm.jsp"%>
-		
-		<script type="text/javascript" src="${pageContext.request.contextPath}/resources/jquery-ui-1.10.3/js/jquery-1.9.1.js"></script>
-		<script type="text/javascript" src="${pageContext.request.contextPath}/resources/bootstrap/js/bootstrap.js"></script>
     </jsp:body>
 </t:sbpage>
 

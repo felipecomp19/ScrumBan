@@ -1,8 +1,8 @@
-<%@tag description="Overall Page template" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <%@attribute name="header" fragment="true"%>
 <%@attribute name="footer" fragment="true"%>
 
-<html>
+<html lang="en">
 <%@include file="../view/shared/head.jsp"%>
 <body>
 	<div id="wrap">
